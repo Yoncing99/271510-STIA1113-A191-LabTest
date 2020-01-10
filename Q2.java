@@ -15,31 +15,16 @@ public class Q2 {
 		sum=sum+num[i];
 	}
 		average=sum/7;
-		System.out.println("Average="+average);
-		below();
-
+		System.out.printf("Average=%.3f\n",average);
+		below(num,average);
 		}
-		 public static void below(){
-			double average;
-			
-			double out;
+		 public static void below(double[] out,double ave){
 
-			for (int i = 0; i < num.length; i++) {
-
-
-				if (num[i] > average);{
-	
-					out += numbers[i] + " ";
-					System.out.println(out +"above average"); 
-					}
-
-				if (num[i] < average);{
-	
-					out += numbers[i] + " ";
-					System.out.println(out +"below average"); 
-					}
+			for (int i = 0; i < out.length; i++) {
+				if (out[i] >= ave)
+					System.out.println(out[i]+" above average"); 
+				else if (out[i] <= ave)
+					System.out.println(out[i] +" below average"); 	
 			}
-		
 		}
-    
 	}
